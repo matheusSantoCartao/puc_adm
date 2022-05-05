@@ -73,7 +73,11 @@
   <div class="flex">
     <div class="flex-1 p-3">
       <label class="text-sm text-gray-600">Contéudo:</label>
-      <ckeditor :editor="editor" v-model="data.conteudo" :config="editorConfig"></ckeditor>
+      <Input
+        type="default"
+        v-model="data.conteudo"
+        placeholder="Subtítulo da publicação"
+      />
     </div>
     <div class="flex-1 p-3">
       <label class="text-sm text-gray-600">Demonstração</label>
@@ -92,17 +96,6 @@ import { GET, POST } from "../../services/api";
 import { toDate, toDateUS } from "../../services/formater";
 import { inject, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
-import EssentialsPlugin from '@ckeditor/ckeditor5-essentials/src/essentials';
-import BoldPlugin from '@ckeditor/ckeditor5-basic-styles/src/bold';
-import ItalicPlugin from '@ckeditor/ckeditor5-basic-styles/src/italic';
-import Image from '@ckeditor/ckeditor5-image/src/image';
-import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
-import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
-import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
-import Heading from '@ckeditor/ckeditor5-heading/src/heading';
-import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
-import Font from '@ckeditor/ckeditor5-font/src/font';
 
 export default {
   name: "editUsers",
@@ -113,35 +106,7 @@ export default {
 
     data() {
       return {
-          editor: ClassicEditor,
           editorData: '',
-          editorConfig: {
-              plugins: [
-                  EssentialsPlugin,
-                  BoldPlugin,
-                  ItalicPlugin,
-                  ParagraphPlugin,
-                  Base64UploadAdapter,
-                  Image,
-                  ImageUpload,
-                  Heading,
-                  Alignment,
-                  Font
-              ],
-              toolbar: {
-                  items: [
-                      'undo',
-                      'redo',
-                      'heading',
-                      'fontColor', 
-                      'fontBackgroundColor',
-                      'bold',
-                      'italic',                      
-                      'uploadImage',
-                      'alignment',
-                  ]
-              }
-          }
       };
   },
 

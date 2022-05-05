@@ -1,14 +1,14 @@
 <template>
   <div class="my-6">
-    <h3 class="font-bold">Lista de {{ route.name }}</h3>
+    <h3 class="font-bold">Lista de Dicas</h3>
     <span class="text-sm text-gray-500"
-      >Aqui você pode observar todos os itens relacionados as {{ route.name.toLowerCase() }} como
+      >Aqui você pode observar todos os itens relacionados as dicas como
       suas respectivas ações.
     </span>
   </div>
   <div class="flex mb-6 justify-end">
     <router-link to="/dicas/criar">
-      <Button color="primary" :text="`Criar nova ${(route.name.slice(0, -1)).toLowerCase()}`" />
+      <Button color="primary" text="Criar nova dica" />
     </router-link>
   </div>
   <div class="card">
@@ -26,7 +26,7 @@ import DataTable from "../../components/Elements/Datatable.vue";
 import Button from "../../components/Elements/Button.vue";
 import { inject, onMounted, ref } from "vue";
 import { GET, DELETE } from "../../services/api";
-import { useRoute, useRouter } from "vue-router";
+import { useRouter } from "vue-router";
 
 export default {
   name: "dicas",
@@ -43,7 +43,6 @@ export default {
       { key: "Options", value: "" },
     ];
 
-    const route = useRoute();
     const router = useRouter();
     const modal = inject("modal");
     const alert = inject("alert");
@@ -95,7 +94,7 @@ export default {
       { icon: "trash", action: (param) => deleteItem(param) },
     ];
 
-    return { headers, data, options, route };
+    return { headers, data, options };
   },
 };
 </script>

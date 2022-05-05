@@ -1,7 +1,7 @@
 <template>
   <div class="my-6">
     <h3 class="font-bold">
-      Criar uma nova {{ route.name.split("/")[0].slice(0, -1).toLowerCase() }}
+      Criar uma nova Dica
     </h3>
     <span class="text-sm text-gray-500"
       >Preencha as informações abaixo e clique no botão <b>criar</b> para salvar
@@ -68,7 +68,11 @@
   <div class="flex">
     <div class="flex-1 p-3">
       <label class="text-sm text-gray-600">Contéudo:</label>
-      <ckeditor :editor="editor" v-model="data.conteudo" :config="editorConfig"></ckeditor>
+      <Input
+        type="default"
+        v-model="data.conteudo"
+        placeholder="Conteúdo"
+      />
     </div>
     <div class="flex-1 p-3">
       <label class="text-sm text-gray-600">Demonstração</label>
@@ -89,7 +93,7 @@ import Button from "../../components/Elements/Button.vue";
 import { inject, ref} from "vue";
 import { POST } from "../../services/api";
 import { isEmpty } from "../../services/validate";
-import { useRoute, useRouter } from "vue-router";
+import { useRouter } from "vue-router";
 import { decodeJwt } from "../../services/util"
 import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 import EssentialsPlugin from '@ckeditor/ckeditor5-essentials/src/essentials';
@@ -160,7 +164,6 @@ export default {
     const loader = inject("loading");
     const alert = inject("alert");
     const router = useRouter();
-    const route = useRoute();
 
     // onMounted(()=> {
     //   console.log(ClassicEditor.);
@@ -218,7 +221,6 @@ export default {
       alertProps,
       data,
       create,
-      route,
       content,
       changeImage,
       readURL
