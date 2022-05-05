@@ -1,0 +1,203 @@
+{
+  "dashboard": {
+    "badges": [
+      {
+        "id": 1,
+        "name": "Acessos Hoje",
+        "value": 40
+      },
+      {
+        "id": 2,
+        "name": "Acessos no Mês",
+        "value": 140
+      },
+      {
+        "id": 3,
+        "name": "Usuários",
+        "value": 240
+      },
+      {
+        "id": 4,
+        "name": "Publicações",
+        "value": 30
+      }
+    ],
+    "graphs": [
+      {
+        "labels": [
+          "Outubro",
+          "Novembro",
+          "Dezembro",
+          "Janeiro",
+          "Fevereiro"
+        ],
+        "values": [
+          200,
+          250,
+          300,
+          500,
+          0
+        ],
+        "name": "Quantidade de usuários nos ultimos meses.",
+        "type": "line"
+      },
+      {
+        "labels": [
+          "15",
+          "18",
+          "22",
+          "26",
+          "30"
+        ],
+        "values": [
+          2,
+          300,
+          14,
+          13,
+          22
+        ],
+        "name": "Faixa etária dos usuários.",
+        "type": "line"
+      }
+    ]
+  },
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "José Bruno",
+      "email": "josebruno@email.com",
+      "qtd_perfis": 8,
+      "qtd_publicacoes": 80
+    },
+    {
+      "name": "Anna",
+      "email": "annablog@email.com",
+      "id": 2
+    }
+  ],
+  "perfis": [
+    {
+      "id": 2,
+      "user_id": 2,
+      "date": "2021-25-12 23:50:55",
+      "name": "Perfil Praia",
+      "image": "https://1.bp.blogspot.com/-em94xIw2qvQ/XlXVfEmASdI/AAAAAAAAMnk/7aZNb2gt1h43V23Ao0Ia75h-tt85lfTOwCLcBGAsYHQ/s640/0d3c536b84ee0625abc20877dea22e71.jpg",
+      "posts": [
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+          "title": "Natal",
+          "description": "Teste",
+          "date": "2021-25-12 23:50:55"
+        },
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+          "title": "Natal",
+          "description": "Teste",
+          "date": "2021-25-12 23:50:55"
+        },
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+          "title": "Natal",
+          "description": "Teste",
+          "date": "2021-25-12 23:50:55"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "date": "2021-25-10 23:50:55",
+      "name": "Perfil Natal",
+      "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+      "posts": [
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+          "title": "Natal",
+          "description": "Teste",
+          "date": "2021-25-12 23:50:55"
+        },
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+          "title": "Natal",
+          "description": "Teste",
+          "date": "2021-25-12 23:50:55"
+        },
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+          "title": "Natal",
+          "description": "Teste",
+          "date": "2021-25-12 23:50:55"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "date": "2021-25-10 23:50:55",
+      "name": "Perfil Natal",
+      "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+      "posts": [
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+          "title": "Natal",
+          "description": "Teste",
+          "date": "2021-25-12 23:50:55"
+        },
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+          "title": "Natal",
+          "description": "Teste",
+          "date": "2021-25-12 23:50:55"
+        },
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+          "title": "Natal",
+          "description": "Teste",
+          "date": "2021-25-12 23:50:55"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "date": "2021-25-10 23:50:55",
+      "name": "Perfil Natal",
+      "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+      "posts": [
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+          "title": "Natal",
+          "description": "Teste",
+          "date": "2021-25-12 23:50:55"
+        },
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+          "title": "Natal",
+          "description": "Teste",
+          "date": "2021-25-12 23:50:55"
+        },
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/originals/76/87/7f/76877fd699fe236b207cbca161d63ee3.jpg",
+          "title": "Natal",
+          "description": "Teste",
+          "date": "2021-25-12 23:50:55"
+        }
+      ]
+    }
+  ],
+  "login": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+  }
+}
