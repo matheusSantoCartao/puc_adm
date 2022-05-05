@@ -19,7 +19,7 @@
 
 </template>
 <script lang="ts">
-import { defineComponent, onMounted } from 'vue';
+import { defineComponent } from 'vue';
 import Sidebar from '../components/Elements/Sidebar.vue'
 import Navbar from '../components/Elements/Navbar.vue'
 
